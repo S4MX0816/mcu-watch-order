@@ -1650,5 +1650,197 @@
         "releaseDate": "October 16, 2020"
       }
     ]
+  },
+  "wandaVision": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "January 15, 2021"
+      },
+      {
+        "name": "2",
+        "releaseDate": "January 15, 2021"
+      },
+      {
+        "name": "3",
+        "releaseDate": "January 22, 2021"
+      },
+      {
+        "name": "4",
+        "releaseDate": "January 29, 2021"
+      },
+      {
+        "name": "5",
+        "releaseDate": "February 5, 2021"
+      },
+      {
+        "name": "6",
+        "releaseDate": "February 12, 2021"
+      },
+      {
+        "name": "7",
+        "releaseDate": "February 19, 2021"
+      },
+      {
+        "name": "8",
+        "releaseDate": "February 26, 2021"
+      },
+      {
+        "name": "9",
+        "releaseDate": "March 5, 2021"
+      }
+    ]
+  },
+  "theFalconAndTheWinterSoldier": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "March 19, 2021"
+      },
+      {
+        "name": "2",
+        "releaseDate": "March 26, 2021"
+      },
+      {
+        "name": "3",
+        "releaseDate": "April 2, 2021"
+      },
+      {
+        "name": "4",
+        "releaseDate": "April 9, 2021"
+      },
+      {
+        "name": "5",
+        "releaseDate": "April 16, 2021"
+      },
+      {
+        "name": "6",
+        "releaseDate": "April 23, 2021"
+      }
+    ]
+  },
+  "loki": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "June 9, 2021"
+      },
+      {
+        "name": "2",
+        "releaseDate": "June 16, 2021"
+      },
+      {
+        "name": "3",
+        "releaseDate": "June 23, 2021"
+      },
+      {
+        "name": "4",
+        "releaseDate": "June 30, 2021"
+      },
+      {
+        "name": "5",
+        "releaseDate": "July 7, 2021"
+      },
+      {
+        "name": "6",
+        "releaseDate": "July 14, 2021"
+      }
+    ]
+  },
+  "whatIf...?": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "August 11, 2021"
+      },
+      {
+        "name": "2",
+        "releaseDate": "August 18, 2021"
+      },
+      {
+        "name": "3",
+        "releaseDate": "August 25, 2021"
+      },
+      {
+        "name": "4",
+        "releaseDate": "September 1, 2021"
+      },
+      {
+        "name": "5",
+        "releaseDate": "September 8, 2021"
+      },
+      {
+        "name": "6",
+        "releaseDate": "September 15, 2021"
+      },
+      {
+        "name": "7",
+        "releaseDate": "September 22, 2021"
+      },
+      {
+        "name": "8",
+        "releaseDate": "September 29, 2021"
+      },
+      {
+        "name": "9",
+        "releaseDate": "October 6, 2021"
+      }
+    ]
+  },
+  "hawkeye": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "November 24, 2021"
+      },
+      {
+        "name": "2",
+        "releaseDate": "November 24, 2021"
+      },
+      {
+        "name": "3",
+        "releaseDate": "December 1, 2021"
+      },
+      {
+        "name": "4",
+        "releaseDate": "December 8, 2021"
+      },
+      {
+        "name": "5",
+        "releaseDate": "December 15, 2021"
+      },
+      {
+        "name": "6",
+        "releaseDate": "December 22, 2021"
+      }
+    ]
+  },
+  "moonKnight": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "March 30, 2022"
+      },
+      {
+        "name": "2",
+        "releaseDate": "April 6, 2022"
+      },
+      {
+        "name": "3",
+        "releaseDate": "April 13, 2022"
+      },
+      {
+        "name": "4",
+        "releaseDate": "April 20, 2022"
+      },
+      {
+        "name": "5",
+        "releaseDate": "April 27, 2022"
+      },
+      {
+        "name": "6",
+        "releaseDate": "May 4, 2022"
+      }
+    ]
   }
 }
