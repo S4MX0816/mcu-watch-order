@@ -990,5 +990,395 @@
         "releaseDate": "June 14, 2019"
       }
     ]
+  },
+  "inhumans": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "September 29, 2017"
+      },
+      {
+        "name": "2",
+        "releaseDate": "September 29, 2017"
+      },
+      {
+        "name": "3",
+        "releaseDate": "October 6, 2017"
+      },
+      {
+        "name": "4",
+        "releaseDate": "October 13, 2017"
+      },
+      {
+        "name": "5",
+        "releaseDate": "October 20, 2017"
+      },
+      {
+        "name": "6",
+        "releaseDate": "October 27, 2017"
+      },
+      {
+        "name": "7",
+        "releaseDate": "November 3, 2017"
+      },
+      {
+        "name": "8",
+        "releaseDate": "November 10, 2017"
+      }
+    ]
+  },
+  "lukeCage": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "September 30, 2016"
+      },
+      {
+        "name": "2",
+        "releaseDate": "September 30, 2016"
+      },
+      {
+        "name": "3",
+        "releaseDate": "September 30, 2016"
+      },
+      {
+        "name": "4",
+        "releaseDate": "September 30, 2016"
+      },
+      {
+        "name": "5",
+        "releaseDate": "September 30, 2016"
+      },
+      {
+        "name": "6",
+        "releaseDate": "September 30, 2016"
+      },
+      {
+        "name": "7",
+        "releaseDate": "September 30, 2016"
+      },
+      {
+        "name": "8",
+        "releaseDate": "September 30, 2016"
+      },
+      {
+        "name": "9",
+        "releaseDate": "September 30, 2016"
+      },
+      {
+        "name": "10",
+        "releaseDate": "September 30, 2016"
+      },
+      {
+        "name": "11",
+        "releaseDate": "September 30, 2016"
+      },
+      {
+        "name": "12",
+        "releaseDate": "September 30, 2016"
+      },
+      {
+        "name": "13",
+        "releaseDate": "September 30, 2016"
+      }
+    ],
+    "S2": [
+      {
+        "name": "1",
+        "releaseDate": "June 22, 2018"
+      },
+      {
+        "name": "2",
+        "releaseDate": "June 22, 2018"
+      },
+      {
+        "name": "3",
+        "releaseDate": "June 22, 2018"
+      },
+      {
+        "name": "4",
+        "releaseDate": "June 22, 2018"
+      },
+      {
+        "name": "5",
+        "releaseDate": "June 22, 2018"
+      },
+      {
+        "name": "6",
+        "releaseDate": "June 22, 2018"
+      },
+      {
+        "name": "7",
+        "releaseDate": "June 22, 2018"
+      },
+      {
+        "name": "8",
+        "releaseDate": "June 22, 2018"
+      },
+      {
+        "name": "9",
+        "releaseDate": "June 22, 2018"
+      },
+      {
+        "name": "10",
+        "releaseDate": "June 22, 2018"
+      },
+      {
+        "name": "11",
+        "releaseDate": "June 22, 2018"
+      },
+      {
+        "name": "12",
+        "releaseDate": "June 22, 2018"
+      },
+      {
+        "name": "13",
+        "releaseDate": "June 22, 2018"
+      }
+    ]
+  },
+  "ironFist": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "March 17, 2017"
+      },
+      {
+        "name": "2",
+        "releaseDate": "March 17, 2017"
+      },
+      {
+        "name": "3",
+        "releaseDate": "March 17, 2017"
+      },
+      {
+        "name": "4",
+        "releaseDate": "March 17, 2017"
+      },
+      {
+        "name": "5",
+        "releaseDate": "March 17, 2017"
+      },
+      {
+        "name": "6",
+        "releaseDate": "March 17, 2017"
+      },
+      {
+        "name": "7",
+        "releaseDate": "March 17, 2017"
+      },
+      {
+        "name": "8",
+        "releaseDate": "March 17, 2017"
+      },
+      {
+        "name": "9",
+        "releaseDate": "March 17, 2017"
+      },
+      {
+        "name": "10",
+        "releaseDate": "March 17, 2017"
+      },
+      {
+        "name": "11",
+        "releaseDate": "March 17, 2017"
+      },
+      {
+        "name": "12",
+        "releaseDate": "March 17, 2017"
+      },
+      {
+        "name": "13",
+        "releaseDate": "March 17, 2017"
+      }
+    ],
+    "S2": [
+      {
+        "name": "1",
+        "releaseDate": "September 7, 2018"
+      },
+      {
+        "name": "2",
+        "releaseDate": "September 7, 2018"
+      },
+      {
+        "name": "3",
+        "releaseDate": "September 7, 2018"
+      },
+      {
+        "name": "4",
+        "releaseDate": "September 7, 2018"
+      },
+      {
+        "name": "5",
+        "releaseDate": "September 7, 2018"
+      },
+      {
+        "name": "6",
+        "releaseDate": "September 7, 2018"
+      },
+      {
+        "name": "7",
+        "releaseDate": "September 7, 2018"
+      },
+      {
+        "name": "8",
+        "releaseDate": "September 7, 2018"
+      },
+      {
+        "name": "9",
+        "releaseDate": "September 7, 2018"
+      },
+      {
+        "name": "10",
+        "releaseDate": "September 7, 2018"
+      }
+    ]
+  },
+  "theDefenders": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "August 18, 2017"
+      },
+      {
+        "name": "2",
+        "releaseDate": "August 18, 2017"
+      },
+      {
+        "name": "3",
+        "releaseDate": "August 18, 2017"
+      },
+      {
+        "name": "4",
+        "releaseDate": "August 18, 2017"
+      },
+      {
+        "name": "5",
+        "releaseDate": "August 18, 2017"
+      },
+      {
+        "name": "6",
+        "releaseDate": "August 18, 2017"
+      },
+      {
+        "name": "7",
+        "releaseDate": "August 18, 2017"
+      },
+      {
+        "name": "8",
+        "releaseDate": "August 18, 2017"
+      }
+    ]
+  },
+  "thePunisher": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "November 17, 2017"
+      },
+      {
+        "name": "2",
+        "releaseDate": "November 17, 2017"
+      },
+      {
+        "name": "3",
+        "releaseDate": "November 17, 2017"
+      },
+      {
+        "name": "4",
+        "releaseDate": "November 17, 2017"
+      },
+      {
+        "name": "5",
+        "releaseDate": "November 17, 2017"
+      },
+      {
+        "name": "6",
+        "releaseDate": "November 17, 2017"
+      },
+      {
+        "name": "7",
+        "releaseDate": "November 17, 2017"
+      },
+      {
+        "name": "8",
+        "releaseDate": "November 17, 2017"
+      },
+      {
+        "name": "9",
+        "releaseDate": "November 17, 2017"
+      },
+      {
+        "name": "10",
+        "releaseDate": "November 17, 2017"
+      },
+      {
+        "name": "11",
+        "releaseDate": "November 17, 2017"
+      },
+      {
+        "name": "12",
+        "releaseDate": "November 17, 2017"
+      },
+      {
+        "name": "13",
+        "releaseDate": "November 17, 2017"
+      }
+    ],
+    "S2": [
+      {
+        "name": "1",
+        "releaseDate": "January 18, 2019"
+      },
+      {
+        "name": "2",
+        "releaseDate": "January 18, 2019"
+      },
+      {
+        "name": "3",
+        "releaseDate": "January 18, 2019"
+      },
+      {
+        "name": "4",
+        "releaseDate": "January 18, 2019"
+      },
+      {
+        "name": "5",
+        "releaseDate": "January 18, 2019"
+      },
+      {
+        "name": "6",
+        "releaseDate": "January 18, 2019"
+      },
+      {
+        "name": "7",
+        "releaseDate": "January 18, 2019"
+      },
+      {
+        "name": "8",
+        "releaseDate": "January 18, 2019"
+      },
+      {
+        "name": "9",
+        "releaseDate": "January 18, 2019"
+      },
+      {
+        "name": "10",
+        "releaseDate": "January 18, 2019"
+      },
+      {
+        "name": "11",
+        "releaseDate": "January 18, 2019"
+      },
+      {
+        "name": "12",
+        "releaseDate": "January 18, 2019"
+      },
+      {
+        "name": "13",
+        "releaseDate": "January 18, 2019"
+      }
+    ]
   }
 }
