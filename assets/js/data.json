@@ -1380,5 +1380,275 @@
         "releaseDate": "January 18, 2019"
       }
     ]
+  },
+  "runaways": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "November 21, 2017"
+      },
+      {
+        "name": "2",
+        "releaseDate": "November 21, 2017"
+      },
+      {
+        "name": "3",
+        "releaseDate": "November 21, 2017"
+      },
+      {
+        "name": "4",
+        "releaseDate": "November 28, 2017"
+      },
+      {
+        "name": "5",
+        "releaseDate": "December 5, 2017"
+      },
+      {
+        "name": "6",
+        "releaseDate": "December 12, 2017"
+      },
+      {
+        "name": "7",
+        "releaseDate": "December 19, 2017"
+      },
+      {
+        "name": "8",
+        "releaseDate": "December 26, 2017"
+      },
+      {
+        "name": "9",
+        "releaseDate": "January 2, 2018"
+      },
+      {
+        "name": "10",
+        "releaseDate": "January 9, 2018"
+      }
+    ],
+    "S2": [
+      {
+        "name": "1",
+        "releaseDate": "December 21, 2018"
+      },
+      {
+        "name": "2",
+        "releaseDate": "December 21, 2018"
+      },
+      {
+        "name": "3",
+        "releaseDate": "December 21, 2018"
+      },
+      {
+        "name": "4",
+        "releaseDate": "December 21, 2018"
+      },
+      {
+        "name": "5",
+        "releaseDate": "December 21, 2018"
+      },
+      {
+        "name": "6",
+        "releaseDate": "December 21, 2018"
+      },
+      {
+        "name": "7",
+        "releaseDate": "December 21, 2018"
+      },
+      {
+        "name": "8",
+        "releaseDate": "December 21, 2018"
+      },
+      {
+        "name": "9",
+        "releaseDate": "December 21, 2018"
+      },
+      {
+        "name": "10",
+        "releaseDate": "December 21, 2018"
+      },
+      {
+        "name": "11",
+        "releaseDate": "December 21, 2018"
+      },
+      {
+        "name": "12",
+        "releaseDate": "December 21, 2018"
+      },
+      {
+        "name": "13",
+        "releaseDate": "December 21, 2018"
+      }
+    ],
+    "S3": [
+      {
+        "name": "1",
+        "releaseDate": "December 13, 2019"
+      },
+      {
+        "name": "2",
+        "releaseDate": "December 13, 2019"
+      },
+      {
+        "name": "3",
+        "releaseDate": "December 13, 2019"
+      },
+      {
+        "name": "4",
+        "releaseDate": "December 13, 2019"
+      },
+      {
+        "name": "5",
+        "releaseDate": "December 13, 2019"
+      },
+      {
+        "name": "6",
+        "releaseDate": "December 13, 2019"
+      },
+      {
+        "name": "7",
+        "releaseDate": "December 13, 2019"
+      },
+      {
+        "name": "8",
+        "releaseDate": "December 13, 2019"
+      },
+      {
+        "name": "9",
+        "releaseDate": "December 13, 2019"
+      },
+      {
+        "name": "10",
+        "releaseDate": "December 13, 2019"
+      }
+    ]
+  },
+  "cloak&Dagger": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "June 7, 2018"
+      },
+      {
+        "name": "2",
+        "releaseDate": "June 7, 2018"
+      },
+      {
+        "name": "3",
+        "releaseDate": "June 14, 2018"
+      },
+      {
+        "name": "4",
+        "releaseDate": "June 21, 2018"
+      },
+      {
+        "name": "5",
+        "releaseDate": "June 28, 2018"
+      },
+      {
+        "name": "6",
+        "releaseDate": "July 5, 2018"
+      },
+      {
+        "name": "7",
+        "releaseDate": "July 12, 2018"
+      },
+      {
+        "name": "8",
+        "releaseDate": "July 19, 2018"
+      },
+      {
+        "name": "9",
+        "releaseDate": "July 26, 2018"
+      },
+      {
+        "name": "10",
+        "releaseDate": "August 2, 2018"
+      }
+    ],
+    "S2": [
+      {
+        "name": "1",
+        "releaseDate": "April 4, 2019"
+      },
+      {
+        "name": "2",
+        "releaseDate": "April 4, 2019"
+      },
+      {
+        "name": "3",
+        "releaseDate": "April 11, 2019"
+      },
+      {
+        "name": "4",
+        "releaseDate": "April 18, 2019"
+      },
+      {
+        "name": "5",
+        "releaseDate": "April 25, 2019"
+      },
+      {
+        "name": "6",
+        "releaseDate": "May 2, 2019"
+      },
+      {
+        "name": "7",
+        "releaseDate": "May 9, 2019"
+      },
+      {
+        "name": "8",
+        "releaseDate": "May 16, 2019"
+      },
+      {
+        "name": "9",
+        "releaseDate": "May 23, 2019"
+      },
+      {
+        "name": "10",
+        "releaseDate": "May 30, 2019"
+      }
+    ]
+  },
+  "helstorm": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "October 16, 2020"
+      },
+      {
+        "name": "2",
+        "releaseDate": "October 16, 2020"
+      },
+      {
+        "name": "3",
+        "releaseDate": "October 16, 2020"
+      },
+      {
+        "name": "4",
+        "releaseDate": "October 16, 2020"
+      },
+      {
+        "name": "5",
+        "releaseDate": "October 16, 2020"
+      },
+      {
+        "name": "6",
+        "releaseDate": "October 16, 2020"
+      },
+      {
+        "name": "7",
+        "releaseDate": "October 16, 2020"
+      },
+      {
+        "name": "8",
+        "releaseDate": "October 16, 2020"
+      },
+      {
+        "name": "9",
+        "releaseDate": "October 16, 2020"
+      },
+      {
+        "name": "10",
+        "releaseDate": "October 16, 2020"
+      }
+    ]
   }
 }
