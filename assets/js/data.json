@@ -1,5 +1,5 @@
 {
-  "AOS": {
+  "agentsOfShield": {
     "S1": [
       {
         "name": "1",
@@ -548,6 +548,446 @@
       {
         "name": "13",
         "releaseDate": "August 12, 2020"
+      }
+    ]
+  },
+  "peggyCarter": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "January 6, 2015"
+      },
+      {
+        "name": "2",
+        "releaseDate": "January 6, 2015"
+      },
+      {
+        "name": "3",
+        "releaseDate": "January 13, 2015"
+      },
+      {
+        "name": "4",
+        "releaseDate": "January 27, 2015"
+      },
+      {
+        "name": "5",
+        "releaseDate": "February 3, 2015"
+      },
+      {
+        "name": "6",
+        "releaseDate": "February 10, 2015"
+      },
+      {
+        "name": "7",
+        "releaseDate": "February 17, 2015"
+      },
+      {
+        "name": "8",
+        "releaseDate": "February 24, 2015"
+      }
+    ],
+    "S2": [
+      {
+        "name": "1",
+        "releaseDate": "January 19, 2016"
+      },
+      {
+        "name": "2",
+        "releaseDate": "January 19, 2016"
+      },
+      {
+        "name": "3",
+        "releaseDate": "January 26, 2016"
+      },
+      {
+        "name": "4",
+        "releaseDate": "February 2, 2016"
+      },
+      {
+        "name": "5",
+        "releaseDate": "February 9, 2016"
+      },
+      {
+        "name": "6",
+        "releaseDate": "February 16, 2016"
+      },
+      {
+        "name": "7",
+        "releaseDate": "February 16, 2016"
+      },
+      {
+        "name": "8",
+        "releaseDate": "February 23, 2016"
+      },
+      {
+        "name": "9",
+        "releaseDate": "February 23, 2016"
+      },
+      {
+        "name": "10",
+        "releaseDate": "March 1, 2016"
+      }
+    ]
+  },
+  "oneShots": [
+    {
+      "name": "The Consultant",
+      "releaseDate": "September 13, 2011"
+    },
+    {
+      "name": "A Funny Thing Happened on the Way to Thor's Hammer",
+      "releaseDate": "October 25, 2011"
+    },
+    {
+      "name": "Item 47",
+      "releaseDate": "September 25, 2012"
+    },
+    {
+      "name": "Agent Carter",
+      "releaseDate": "September 3, 2013"
+    },
+    {
+      "name": "All Hail the King",
+      "releaseDate": "February 4, 2014"
+    },
+    {
+      "name": "Team Thor",
+      "releaseDate": "August 28, 2016"
+    },
+    {
+      "name": "Team Thor: Part 2",
+      "releaseDate": "February 14, 2017"
+    },
+    {
+      "name": "Team Darryl",
+      "releaseDate": "February 20, 2018"
+    }
+  ],
+  "daredevil": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "April 10, 2015"
+      },
+      {
+        "name": "2",
+        "releaseDate": "April 10, 2015"
+      },
+      {
+        "name": "3",
+        "releaseDate": "April 10, 2015"
+      },
+      {
+        "name": "4",
+        "releaseDate": "April 10, 2015"
+      },
+      {
+        "name": "5",
+        "releaseDate": "April 10, 2015"
+      },
+      {
+        "name": "6",
+        "releaseDate": "April 10, 2015"
+      },
+      {
+        "name": "7",
+        "releaseDate": "April 10, 2015"
+      },
+      {
+        "name": "8",
+        "releaseDate": "April 10, 2015"
+      },
+      {
+        "name": "9",
+        "releaseDate": "April 10, 2015"
+      },
+      {
+        "name": "10",
+        "releaseDate": "April 10, 2015"
+      },
+      {
+        "name": "11",
+        "releaseDate": "April 10, 2015"
+      },
+      {
+        "name": "12",
+        "releaseDate": "April 10, 2015"
+      },
+      {
+        "name": "13",
+        "releaseDate": "April 10, 2015"
+      }
+    ],
+    "S2": [
+      {
+        "name": "1",
+        "releaseDate": "March 18, 2016"
+      },
+      {
+        "name": "2",
+        "releaseDate": "March 18, 2016"
+      },
+      {
+        "name": "3",
+        "releaseDate": "March 18, 2016"
+      },
+      {
+        "name": "4",
+        "releaseDate": "March 18, 2016"
+      },
+      {
+        "name": "5",
+        "releaseDate": "March 18, 2016"
+      },
+      {
+        "name": "6",
+        "releaseDate": "March 18, 2016"
+      },
+      {
+        "name": "7",
+        "releaseDate": "March 18, 2016"
+      },
+      {
+        "name": "8",
+        "releaseDate": "March 18, 2016"
+      },
+      {
+        "name": "9",
+        "releaseDate": "March 18, 2016"
+      },
+      {
+        "name": "10",
+        "releaseDate": "March 18, 2016"
+      },
+      {
+        "name": "11",
+        "releaseDate": "March 18, 2016"
+      },
+      {
+        "name": "12",
+        "releaseDate": "March 18, 2016"
+      },
+      {
+        "name": "13",
+        "releaseDate": "March 18, 2016"
+      }
+    ],
+    "S3": [
+      {
+        "name": "1",
+        "releaseDate": "October 19, 2018"
+      },
+      {
+        "name": "2",
+        "releaseDate": "October 19, 2018"
+      },
+      {
+        "name": "3",
+        "releaseDate": "October 19, 2018"
+      },
+      {
+        "name": "4",
+        "releaseDate": "October 19, 2018"
+      },
+      {
+        "name": "5",
+        "releaseDate": "October 19, 2018"
+      },
+      {
+        "name": "6",
+        "releaseDate": "October 19, 2018"
+      },
+      {
+        "name": "7",
+        "releaseDate": "October 19, 2018"
+      },
+      {
+        "name": "8",
+        "releaseDate": "October 19, 2018"
+      },
+      {
+        "name": "9",
+        "releaseDate": "October 19, 2018"
+      },
+      {
+        "name": "10",
+        "releaseDate": "October 19, 2018"
+      },
+      {
+        "name": "11",
+        "releaseDate": "October 19, 2018"
+      },
+      {
+        "name": "12",
+        "releaseDate": "October 19, 2018"
+      },
+      {
+        "name": "13",
+        "releaseDate": "October 19, 2018"
+      }
+    ]
+  },
+  "jessicaJones": {
+    "S1": [
+      {
+        "name": "1",
+        "releaseDate": "November 20, 2015"
+      },
+      {
+        "name": "2",
+        "releaseDate": "November 20, 2015"
+      },
+      {
+        "name": "3",
+        "releaseDate": "November 20, 2015"
+      },
+      {
+        "name": "4",
+        "releaseDate": "November 20, 2015"
+      },
+      {
+        "name": "5",
+        "releaseDate": "November 20, 2015"
+      },
+      {
+        "name": "6",
+        "releaseDate": "November 20, 2015"
+      },
+      {
+        "name": "7",
+        "releaseDate": "November 20, 2015"
+      },
+      {
+        "name": "8",
+        "releaseDate": "November 20, 2015"
+      },
+      {
+        "name": "9",
+        "releaseDate": "November 20, 2015"
+      },
+      {
+        "name": "10",
+        "releaseDate": "November 20, 2015"
+      },
+      {
+        "name": "11",
+        "releaseDate": "November 20, 2015"
+      },
+      {
+        "name": "12",
+        "releaseDate": "November 20, 2015"
+      },
+      {
+        "name": "13",
+        "releaseDate": "November 20, 2015"
+      }
+    ],
+    "S2": [
+      {
+        "name": "1",
+        "releaseDate": "March 8, 2018"
+      },
+      {
+        "name": "2",
+        "releaseDate": "March 8, 2018"
+      },
+      {
+        "name": "3",
+        "releaseDate": "March 8, 2018"
+      },
+      {
+        "name": "4",
+        "releaseDate": "March 8, 2018"
+      },
+      {
+        "name": "5",
+        "releaseDate": "March 8, 2018"
+      },
+      {
+        "name": "6",
+        "releaseDate": "March 8, 2018"
+      },
+      {
+        "name": "7",
+        "releaseDate": "March 8, 2018"
+      },
+      {
+        "name": "8",
+        "releaseDate": "March 8, 2018"
+      },
+      {
+        "name": "9",
+        "releaseDate": "March 8, 2018"
+      },
+      {
+        "name": "10",
+        "releaseDate": "March 8, 2018"
+      },
+      {
+        "name": "11",
+        "releaseDate": "March 8, 2018"
+      },
+      {
+        "name": "12",
+        "releaseDate": "March 8, 2018"
+      },
+      {
+        "name": "13",
+        "releaseDate": "March 8, 2018"
+      }
+    ],
+    "S3": [
+      {
+        "name": "1",
+        "releaseDate": "June 14, 2019"
+      },
+      {
+        "name": "2",
+        "releaseDate": "June 14, 2019"
+      },
+      {
+        "name": "3",
+        "releaseDate": "June 14, 2019"
+      },
+      {
+        "name": "4",
+        "releaseDate": "June 14, 2019"
+      },
+      {
+        "name": "5",
+        "releaseDate": "June 14, 2019"
+      },
+      {
+        "name": "6",
+        "releaseDate": "June 14, 2019"
+      },
+      {
+        "name": "7",
+        "releaseDate": "June 14, 2019"
+      },
+      {
+        "name": "8",
+        "releaseDate": "June 14, 2019"
+      },
+      {
+        "name": "9",
+        "releaseDate": "June 14, 2019"
+      },
+      {
+        "name": "10",
+        "releaseDate": "June 14, 2019"
+      },
+      {
+        "name": "11",
+        "releaseDate": "June 14, 2019"
+      },
+      {
+        "name": "12",
+        "releaseDate": "June 14, 2019"
+      },
+      {
+        "name": "13",
+        "releaseDate": "June 14, 2019"
       }
     ]
   }
