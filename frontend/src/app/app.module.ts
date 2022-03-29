@@ -8,6 +8,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [AppComponent, SignInComponent, NavBarComponent],
@@ -17,6 +18,7 @@ import { AngularMaterialModule } from './angular-material.module';
     HttpClientModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
