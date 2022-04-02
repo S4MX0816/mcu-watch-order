@@ -8,4 +8,7 @@ export const ENVIRONMENT = {
   // Authentication
   SECRET_KEY: process.env.SECRET_KEY,
   EXPIRES_TIME: String(process.env.EXPIRES_TIME),
+
+  // Data upload secret key
+  MCU_SECRET_KEY: String(process.env.MCU_SECRET_KEY),
 };

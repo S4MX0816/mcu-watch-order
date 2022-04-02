@@ -1,21 +1,35 @@
-import { Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { Data } from './data/data';
-import { Exceptions } from './data/exceptions';
+import { Data } from '../helpers/marvel-data';
+import { Exceptions } from '../helpers/exceptions';
 import { Mcu } from './mcu.model';
 import { Model } from 'mongoose';
+import { PasswordService } from 'src/helpers/password.service';
+import { ENVIRONMENT } from 'src/helpers/configs/environment';
 
 @Injectable()
 export class McuService {
   data: Record<string, any> = Data;
   exceptions: string[] = Exceptions;
-  constructor(@InjectModel('mcu') private readonly mcuModel: Model<Mcu>) {}
+  constructor(
+    @InjectModel('mcu') private readonly mcuModel: Model<Mcu>,
+    private readonly passwordService: PasswordService,
+  ) {}
 
   /**
    *
    * @returns Promise of shows uploaded on databse
    */
-  public async uploadData() {
+  public async uploadData(secretKey) {
+    const isSecretKeyValid = await this.passwordService.comparePassword(
+      secretKey,
+      ENVIRONMENT.MCU_SECRET_KEY,
+    );
+
+    if (!isSecretKeyValid) {
+      throw new HttpException('Invalid secret key', HttpStatus.UNAUTHORIZED);
+    }
+
     const formattedData: Record<string, any> = [];
     for (const showName in this.data) {
       if (this.exceptions.includes(showName)) {

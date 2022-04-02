@@ -6,12 +6,14 @@ import { InjectModel } from '@nestjs/mongoose';
 import { LoginDto } from './dto/login-dto';
 import { JwtPayload } from './typings/payload.typing';
 import { JwtService } from '@nestjs/jwt';
+import { PasswordService } from 'src/helpers/password.service';
 
 @Injectable()
 export class AuthService {
   constructor(
     @InjectModel('users') private readonly userModel: Model<User>,
     private readonly jwtService: JwtService,
+    private readonly passwordService: PasswordService,
   ) {}
 
   /**
@@ -20,9 +22,13 @@ export class AuthService {
    * @returns created user details
    */
   public async register(createUserDto: CreateUserDto) {
+    const hashedPassword = await this.passwordService.hashPassword(
+      createUserDto.password,
+    );
+
     const userSchema = new this.userModel({
       email: createUserDto.email,
-      password: createUserDto.password,
+      password: hashedPassword,
       username: createUserDto.username,
     });
     return userSchema.save();
@@ -34,11 +40,13 @@ export class AuthService {
    * @returns user with login details
    */
   public async login(loginDto: LoginDto) {
-    const userInDb = await this.userModel
-      .findOne({ username: loginDto.username, password: loginDto.password })
-      .exec();
+    const userInDb = await this.findUser(loginDto.username);
+    const isPasswordValid = await this.passwordService.comparePassword(
+      loginDto.password,
+      userInDb.password,
+    );
 
-    if (!userInDb) {
+    if (!isPasswordValid) {
       throw new HttpException('Invalid credentials', HttpStatus.UNAUTHORIZED);
     }
 

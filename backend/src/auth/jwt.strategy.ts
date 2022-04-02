@@ -6,7 +6,7 @@ import { Injectable } from '@nestjs/common';
 import { JwtPayload } from './typings/payload.typing';
 import { ContextIdFactory, ModuleRef } from '@nestjs/core';
 import { CreateUserDto } from './dto/create-user.dto';
-import { ENVIRONMENT } from 'src/configs/environment';
+import { ENVIRONMENT } from 'src/helpers/configs/environment';
 
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {

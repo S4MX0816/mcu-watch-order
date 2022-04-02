@@ -1,7 +1,8 @@
-import { Controller, Post, UseGuards } from '@nestjs/common';
+import { Body, Controller, Post, UseGuards } from '@nestjs/common';
 import { McuService } from './mcu.service';
 import { AuthGuard } from '@nestjs/passport';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
+import { SecretKeyDto } from './dto/secret-key.dto';
 
 @Controller('mcu')
 @ApiTags('mcu')
@@ -11,8 +12,8 @@ export class McuController {
 
   @Post('')
   @UseGuards(AuthGuard('jwt'))
-  async uploadData() {
-    const response = await this.mcuService.uploadData();
+  async uploadData(@Body() { secretKey }: SecretKeyDto) {
+    const response = await this.mcuService.uploadData(secretKey);
 
     return {
       data: response,
