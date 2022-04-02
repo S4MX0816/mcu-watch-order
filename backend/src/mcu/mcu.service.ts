@@ -20,7 +20,7 @@ export class McuService {
    *
    * @returns Promise of shows uploaded on databse
    */
-  public async uploadData(secretKey) {
+  public async uploadData(secretKey: string) {
     const isSecretKeyValid = await this.passwordService.comparePassword(
       secretKey,
       ENVIRONMENT.MCU_SECRET_KEY,
@@ -41,6 +41,10 @@ export class McuService {
       }
     }
     return this.mcuModel.insertMany(formattedData);
+  }
+
+  public async getData() {
+    return this.mcuModel.find().sort({ releaseDate: 1 }).exec();
   }
 
   /**
