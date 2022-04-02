@@ -9,6 +9,7 @@ async function bootstrap() {
   const config = new DocumentBuilder()
     .setTitle('MCU watch order')
     .setDescription('MCU watch order API descriptions')
+    .addBearerAuth({ in: 'header', type: 'http' })
     .setVersion('1.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);

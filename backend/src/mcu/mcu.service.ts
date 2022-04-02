@@ -10,26 +10,39 @@ export class McuService {
   data: Record<string, any> = Data;
   exceptions: string[] = Exceptions;
   constructor(@InjectModel('mcu') private readonly mcuModel: Model<Mcu>) {}
-  async uploadData() {
+
+  /**
+   *
+   * @returns Promise of shows uploaded on databse
+   */
+  public async uploadData() {
     const formattedData: Record<string, any> = [];
     for (const showName in this.data) {
       if (this.exceptions.includes(showName)) {
         formattedData.push(...this.data[showName]);
       } else {
-        formattedData.push(...this.getShowsData(showName, this.data[showName]));
+        formattedData.push(
+          ...this._getShowsData(showName, this.data[showName]),
+        );
       }
     }
     return this.mcuModel.insertMany(formattedData);
   }
 
-  getShowsData(
+  /**
+   *
+   * @param showName name of the show
+   * @param seasons array of objects containig show seasons
+   * @returns array of formated data in an array of objects
+   */
+  private _getShowsData(
     showName: string,
     seasons: Record<string, any>,
   ): Record<string, any>[] {
     const formattedData: Record<string, any>[] = [];
     for (const [key, value] of Object.entries(seasons)) {
       value.forEach((element: { name: string; releaseDate: Date }) => {
-        element.name = `${this.getShowName(showName)} ${key}E${element.name}`;
+        element.name = `${this._getShowName(showName)} ${key}E${element.name}`;
       });
       formattedData.push(...value);
     }
@@ -41,7 +54,7 @@ export class McuService {
    * @param text
    * @returns converts camelCase to Sentance Case
    */
-  getShowName(text: string): string {
+  private _getShowName(text: string): string {
     const result = text.replace(/([A-Z])/g, ' $1');
     return result.charAt(0).toUpperCase() + result.slice(1);
   }

@@ -4,10 +4,15 @@ import { Model } from 'mongoose';
 import { User } from './auth.model';
 import { InjectModel } from '@nestjs/mongoose';
 import { LoginDto } from './dto/login-dto';
+import { JwtPayload } from './typings/payload.typing';
+import { JwtService } from '@nestjs/jwt';
 
 @Injectable()
 export class AuthService {
-  constructor(@InjectModel('users') private readonly userModel: Model<User>) {}
+  constructor(
+    @InjectModel('users') private readonly userModel: Model<User>,
+    private readonly jwtService: JwtService,
+  ) {}
 
   /**
    *
@@ -34,9 +39,31 @@ export class AuthService {
       .exec();
 
     if (!userInDb) {
-      throw new HttpException('Invalid credentials', HttpStatus.CONFLICT);
+      throw new HttpException('Invalid credentials', HttpStatus.UNAUTHORIZED);
     }
 
+    // generate and sign token
+    const token = this._createToken(userInDb);
+
+    return { token, userInDb };
+  }
+
+  private _createToken({ username }: CreateUserDto) {
+    const expiresIn = '15h';
+
+    const user: JwtPayload = { username };
+    const accessToken = this.jwtService.sign(user);
+    return {
+      expiresIn,
+      accessToken,
+    };
+  }
+
+  async findUser(username: string) {
+    const userInDb = await this.userModel.findOne({ username }).exec();
+    if (!userInDb) {
+      throw new HttpException('Invalid credentials', HttpStatus.UNAUTHORIZED);
+    }
     return userInDb;
   }
 }
