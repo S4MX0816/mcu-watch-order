@@ -1,21 +1,114 @@
-<app-nav-bar></app-nav-bar>
-<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
-  <mat-card class="box">
-    <mat-card-header>
-      <mat-card-title>Log in</mat-card-title>
-    </mat-card-header>
-    <form class="example-form">
-      <mat-card-content>
-        <mat-form-field class="example-full-width">
-          <input matInput placeholder="Username" />
+<div fxLayout="row" fxLayoutAlign="center center" class="sign-in-container">
+  <div *ngIf="isSignIn">
+    <form [formGroup]="signInForm">
+      <h1 id="litheader" [ngClass]="state ? 'poweron' : ''">
+        <img src="../../assets/LOG-IN.png" alt="" />
+      </h1>
+      <div class="inset">
+        <mat-form-field [floatLabel]="'never'" appearance="outline">
+          <input
+            matInput
+            formControlName="username"
+            type="text"
+            name="username"
+            placeholder="Username"
+          />
+          <mat-error *ngIf="signInForm.get('username')?.invalid"
+            >Please enter username</mat-error
+          >
         </mat-form-field>
-        <mat-form-field class="example-full-width">
-          <input matInput placeholder="Password" />
+        <mat-form-field [floatLabel]="'never'" appearance="outline">
+          <input
+            matInput
+            formControlName="password"
+            type="password"
+            name="password"
+            placeholder="Access code"
+          />
+          <mat-error *ngIf="signInForm.get('password')?.invalid"
+            >Please enter password</mat-error
+          >
         </mat-form-field>
-      </mat-card-content>
-      <button mat-stroked-button color="accent" class="btn-block">
-        Log in
-      </button>
+      </div>
+      <p class="p-container">
+        <input
+          [ngClass]="isBtnClicked ? (state ? '' : 'denied') : ''"
+          type="submit"
+          name="Login"
+          id="go"
+          [value]="
+            isBtnClicked
+              ? state
+                ? 'Initializing...'
+                : 'Access Denied'
+              : 'Authorize'
+          "
+          (click)="login()"
+        />
+      </p>
+      <span [ngStyle]="{ color: 'white' }" (click)="isSignIn = false"
+        >Don't have an account?</span
+      >
     </form>
-  </mat-card>
+  </div>
+  <div *ngIf="!isSignIn">
+    <form [formGroup]="registerForm">
+      <h1 id="litheader"><img src="../../assets/register.png" alt="" /></h1>
+      <div class="inset">
+        <mat-form-field [floatLabel]="'never'" appearance="outline">
+          <input
+            formControlName="username"
+            matInput
+            type="text"
+            name="username"
+            placeholder="Username"
+          />
+          <mat-error *ngIf="registerForm.get('username')?.invalid"
+            >Please enter username</mat-error
+          >
+        </mat-form-field>
+        <mat-form-field [floatLabel]="'never'" appearance="outline">
+          <input
+            formControlName="email"
+            matInput
+            type="text"
+            name="email"
+            placeholder="Email"
+          />
+          <mat-error *ngIf="registerForm.get('email')?.invalid"
+            >Please enter a valid email</mat-error
+          >
+        </mat-form-field>
+        <mat-form-field [floatLabel]="'never'" appearance="outline">
+          <input
+            formControlName="password"
+            matInput
+            type="password"
+            name="password"
+            placeholder="Access code"
+          />
+          <mat-error *ngIf="registerForm.get('password')?.invalid"
+            >Please enter acess code</mat-error
+          >
+        </mat-form-field>
+      </div>
+      <p class="p-container">
+        <input
+          type="submit"
+          name="Login"
+          id="go"
+          value="Be an Avenger"
+          (click)="register()"
+        />
+      </p>
+
+      <span [ngStyle]="{ color: 'white' }" (click)="isSignIn = true"
+        >Already have an account?</span
+      >
+    </form>
+  </div>
+</div>
+
+<div class="background-wrap">
+  <div class="background"></div>
 </div>
