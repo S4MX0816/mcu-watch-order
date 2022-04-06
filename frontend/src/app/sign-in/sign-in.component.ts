@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
+import { CookieTokenService } from '../services/cookie-token.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -9,15 +11,19 @@ import { AuthService } from '../services/auth.service';
 })
 export class SignInComponent implements OnInit {
   isSignIn: boolean = true;
-  state: boolean = false;
-  isBtnClicked: boolean = false;
   registerForm!: FormGroup;
   signInForm!: FormGroup;
-  constructor(private fb: FormBuilder, private authService: AuthService) {}
+  constructor(
+    private readonly fb: FormBuilder,
+    private readonly router: Router,
+    private readonly cookieService: CookieTokenService,
+    private readonly authService: AuthService
+  ) {}
 
   ngOnInit(): void {
     this.initForm();
   }
+
   initForm() {
     const formData = {
       username: [null, [Validators.required]],
@@ -37,16 +43,21 @@ export class SignInComponent implements OnInit {
     });
     this.signInForm = this.fb.group(formData);
   }
+
   login() {
     this.authService.login(this.signInForm.value).subscribe(
       (res) => {
         alert(res.message);
+        const { accessToken, expiresIn } = res.data.token;
+        this.cookieService.setToken(accessToken, expiresIn);
+        this.router.navigate(['/main']);
       },
       (err) => {
         alert(err);
       }
     );
   }
+
   register() {
     this.authService.register(this.registerForm.value).subscribe(
       (res) => {

@@ -1,13 +1,14 @@
 <div fxLayout="row" fxLayoutAlign="center center" class="sign-in-container">
   <div *ngIf="isSignIn">
     <form [formGroup]="signInForm">
-      <h1 id="litheader" [ngClass]="state ? 'poweron' : ''">
+      <h1>
         <img src="../../assets/LOG-IN.png" alt="" />
       </h1>
       <div class="inset">
         <mat-form-field [floatLabel]="'never'" appearance="outline">
           <input
             matInput
+            class="pointer-cursor"
             formControlName="username"
             type="text"
             name="username"
@@ -20,6 +21,7 @@
         <mat-form-field [floatLabel]="'never'" appearance="outline">
           <input
             matInput
+            class="pointer-cursor"
             formControlName="password"
             type="password"
             name="password"
@@ -32,23 +34,18 @@
       </div>
       <p class="p-container">
         <input
-          [ngClass]="isBtnClicked ? (state ? '' : 'denied') : ''"
           type="submit"
           name="Login"
           id="go"
-          [value]="
-            isBtnClicked
-              ? state
-                ? 'Initializing...'
-                : 'Access Denied'
-              : 'Authorize'
-          "
+          value="Authorize"
           (click)="login()"
         />
       </p>
-      <span [ngStyle]="{ color: 'white' }" (click)="isSignIn = false"
-        >Don't have an account?</span
-      >
+      <div fxLayoutAlign="center center" class="question">
+        <span class="pointer-cursor" (click)="isSignIn = false"
+          >Don't have an account?</span
+        >
+      </div>
     </form>
   </div>
   <div *ngIf="!isSignIn">
@@ -57,8 +54,9 @@
       <div class="inset">
         <mat-form-field [floatLabel]="'never'" appearance="outline">
           <input
-            formControlName="username"
             matInput
+            class="pointer-cursor"
+            formControlName="username"
             type="text"
             name="username"
             placeholder="Username"
@@ -69,8 +67,9 @@
         </mat-form-field>
         <mat-form-field [floatLabel]="'never'" appearance="outline">
           <input
-            formControlName="email"
             matInput
+            class="pointer-cursor"
+            formControlName="email"
             type="text"
             name="email"
             placeholder="Email"
@@ -81,8 +80,9 @@
         </mat-form-field>
         <mat-form-field [floatLabel]="'never'" appearance="outline">
           <input
-            formControlName="password"
             matInput
+            class="pointer-cursor"
+            formControlName="password"
             type="password"
             name="password"
             placeholder="Access code"
@@ -101,14 +101,11 @@
           (click)="register()"
         />
       </p>
-
-      <span [ngStyle]="{ color: 'white' }" (click)="isSignIn = true"
-        >Already have an account?</span
-      >
+      <div fxLayoutAlign="center center" class="question">
+        <span class="pointer-cursor" (click)="isSignIn = true"
+          >Already have an account?</span
+        >
+      </div>
     </form>
   </div>
-</div>
-
-<div class="background-wrap">
-  <div class="background"></div>
 </div>

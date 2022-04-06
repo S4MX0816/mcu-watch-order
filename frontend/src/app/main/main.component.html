@@ -1,0 +1,23 @@
+<div fxLayoutAlign="center center">
+  <div
+    class="mcu-table"
+    fxFlex="80"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+  >
+    <div class="mcu-data mcu-data-heading" fxLayout="row">
+      <div fxFlex="10">Sr. No.</div>
+      <div fxFlex="50">Show Name</div>
+      <div fxFlex="40">Released Date</div>
+    </div>
+    <div
+      class="mcu-data"
+      fxLayout="row"
+      *ngFor="let mcu of mcuData; let i = index"
+    >
+      <div fxFlex="10">{{ i + 1 }}</div>
+      <div fxFlex="50">{{ mcu?.name }}</div>
+      <div fxFlex="40">{{ mcu?.releaseDate | date }}</div>
+    </div>
+  </div>
+</div>
