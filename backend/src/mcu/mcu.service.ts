@@ -6,6 +6,7 @@ import { Mcu } from './mcu.model';
 import { Model } from 'mongoose';
 import { PasswordService } from 'src/helpers/password.service';
 import { ENVIRONMENT } from 'src/helpers/configs/environment';
+import { FilterMcuDto } from './dto/filter-mcu.dto';
 
 @Injectable()
 export class McuService {
@@ -43,8 +44,13 @@ export class McuService {
     return this.mcuModel.insertMany(formattedData);
   }
 
-  public async getData() {
-    return this.mcuModel.find().sort({ releaseDate: 1 }).exec();
+  public async getData(filterMcuDto: FilterMcuDto) {
+    return this.mcuModel
+      .find()
+      .sort({ releaseDate: 1 })
+      .skip((filterMcuDto.page - 1) * filterMcuDto.limit)
+      .limit(filterMcuDto.limit)
+      .exec();
   }
 
   /**

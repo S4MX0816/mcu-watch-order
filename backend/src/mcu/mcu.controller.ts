@@ -1,8 +1,9 @@
-import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Post, Query, UseGuards } from '@nestjs/common';
 import { McuService } from './mcu.service';
 import { AuthGuard } from '@nestjs/passport';
 import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { SecretKeyDto } from './dto/secret-key.dto';
+import { FilterMcuDto } from './dto/filter-mcu.dto';
 
 @Controller('mcu')
 @ApiTags('mcu')
@@ -30,8 +31,8 @@ export class McuController {
   @ApiOperation({
     summary: 'This api will get all the data sorted by released date',
   })
-  async getAllData() {
-    const response = await this.mcuService.getData();
+  async getAllData(@Query() filterMcuDto: FilterMcuDto) {
+    const response = await this.mcuService.getData(filterMcuDto);
 
     return {
       data: response,

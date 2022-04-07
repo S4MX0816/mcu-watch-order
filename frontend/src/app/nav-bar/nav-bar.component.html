@@ -1,9 +1,6 @@
 <div class="nav-container" fxLayout="row" fxLayoutAlign="space-around center">
-  <div class="music-bar" id="music" (click)="handleAudio(music)">
-    <img
-      [src]="'../../assets/music ' + (isPlaying ? 'on' : 'off') + '.png'"
-      id="button"
-    />
+  <div class="pointer-cursor" (click)="handleAudio(music)">
+    <img [src]="'../../assets/music ' + (isPlaying ? 'on' : 'off') + '.png'" />
     <audio #music autoplay loop [volume]="0.3">
       <source src="../../assets/The Avengers.mp3" type="audio/mpeg" />
     </audio>
