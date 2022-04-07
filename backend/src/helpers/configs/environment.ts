@@ -11,4 +11,6 @@ export const ENVIRONMENT = {
 
   // Data upload secret key
   MCU_SECRET_KEY: String(process.env.MCU_SECRET_KEY),
+
+  PORT: Number(process.env.PORT),
 };
