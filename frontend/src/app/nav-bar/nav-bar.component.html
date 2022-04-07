@@ -1,16 +1,19 @@
-<nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo"
-      ><img src="../../assets/logo.png" alt=""
-    /></a>
-  </div>
-  <div id="music" (click)="handleAudio(music)">
+<div class="nav-container" fxLayout="row" fxLayoutAlign="space-around center">
+  <div class="music-bar" id="music" (click)="handleAudio(music)">
     <img
       [src]="'../../assets/music ' + (isPlaying ? 'on' : 'off') + '.png'"
       id="button"
     />
     <audio #music autoplay loop [volume]="0.3">
-      <source src="../../assets/The Avenger.mp3" type="audio/mpeg" />
+      <source src="../../assets/The Avengers.mp3" type="audio/mpeg" />
     </audio>
   </div>
-</nav>
+  <div>
+    <a href="#" class="brand-logo"
+      ><img src="../../assets/logo.png" alt=""
+    /></a>
+  </div>
+  <div fxLayoutAlign="end end">
+    <span class="pointer-cursor" (click)="logout()">Logout</span>
+  </div>
+</div>

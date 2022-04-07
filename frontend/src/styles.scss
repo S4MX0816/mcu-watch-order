@@ -51,3 +51,9 @@ input:-webkit-autofill:active {
 .mat-error {
   margin-top: 0.6em;
 }
+
+router-outlet + * {
+  position: absolute;
+  width: 100%;
+  top: 150px;
+}
