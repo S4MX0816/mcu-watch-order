@@ -14,9 +14,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MainComponent } from './main/main.component';
 import { TokenInterceptor } from './helper/token.interceptor';
+import { TempComponent } from './main/temp/temp.component';
 
 @NgModule({
-  declarations: [AppComponent, SignInComponent, NavBarComponent, MainComponent],
+  declarations: [AppComponent, SignInComponent, NavBarComponent, MainComponent, TempComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

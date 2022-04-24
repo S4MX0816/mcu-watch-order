@@ -1,0 +1,29 @@
+<div fxLayoutAlign="center center">
+  <div
+    class="mcu-table"
+    fxFlex="80"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    #mcuContainer
+  >
+    <div
+      fxLayoutGap="10px"
+      fxLayoutAlign="space-between"
+      class="mcu-data mcu-data-heading"
+      fxLayout="row"
+    >
+      <div fxLayoutAlign="center center" fxFlex="10">S.No.</div>
+      <div fxFlex="70">Show Name</div>
+    </div>
+    <div
+      class="mcu-data"
+      fxLayout="row"
+      fxLayoutGap="10px"
+      fxLayoutAlign="space-between"
+      *ngFor="let mcu of mcuData; let i = index"
+    >
+      <div fxLayoutAlign="center center" fxFlex="10">{{ i + 1 }}</div>
+      <div fxFlex="70">{{ mcu?.name }}</div>
+    </div>
+  </div>
+</div>
