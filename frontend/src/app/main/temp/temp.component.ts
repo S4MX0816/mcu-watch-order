@@ -7,8 +7,16 @@ import { Data } from './data/marvel-data';
   styleUrls: ['./temp.component.scss'],
 })
 export class TempComponent implements OnInit {
-  mcuData = Data;
+  mcuData: typeof Data;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.mcuData = Data.sort((a, b) =>
+      new Date(a.releaseDate) < new Date(b.releaseDate)
+        ? -1
+        : new Date(a.releaseDate) > new Date(b.releaseDate)
+        ? 1
+        : 0
+    );
+  }
 }
